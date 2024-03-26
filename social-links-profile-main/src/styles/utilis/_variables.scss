@@ -1,0 +1,12 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  --green: hsl(75, 94%, 57%);
+
+  --text-primary: var(--white);
+  --text-secondary: var(--green);
+
+  --bg-primary: var(--off-black);
+  --bg-secondary: var(--dark-grey);
+}
