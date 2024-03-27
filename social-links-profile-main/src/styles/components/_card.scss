@@ -23,14 +23,14 @@
   margin-bottom: func.rem(24px);
   align-self: center;
 }
-.card .address {
+.card__address {
   color: var(--text-secondary);
   font-weight: 600;
 }
-.card .occuption {
+.card__occuption {
   margin-top: func.rem(24px);
 }
-.card .social-links {
+.card__social-links {
   --gap: #{func.rem(16px)};
   margin-top: func.rem(24px);
 
@@ -42,7 +42,7 @@
   padding: 0;
 }
 
-.card .social-links .social-link {
+.card__social-link {
   text-decoration: none;
   font-weight: bold;
   color: var(--text-primary);
