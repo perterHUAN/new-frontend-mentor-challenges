@@ -84,13 +84,23 @@ html {
 
 body {
   min-block-size: 100%;
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   text-align: center;
   font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
   padding: 1rem;
+}
+
+main {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
@@ -98,6 +108,7 @@ body {
   --card-padding: 1.5rem;
   --card-image-size: 4.125rem;
   --card-border-radius: 0.625rem;
+  width: 100%;
   max-width: var(--card-max-width);
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);

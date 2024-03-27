@@ -4,6 +4,7 @@
   --card-padding: #{func.rem(24px)};
   --card-image-size: #{func.rem(66px)};
   --card-border-radius: #{func.rem(10px)};
+  width: 100%;
   max-width: var(--card-max-width);
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);

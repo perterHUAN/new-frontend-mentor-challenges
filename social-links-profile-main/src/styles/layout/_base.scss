@@ -1,3 +1,4 @@
+@use "../utilis/functions" as func;
 html {
   block-size: 100%;
 }
@@ -5,14 +6,22 @@ html {
 body {
   min-block-size: 100%;
 
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   background-color: var(--bg-primary);
   color: var(--text-primary);
 
   text-align: center;
   font-family: "Inter", sans-serif;
-
+  font-size: #{func.rem(14px)};
   padding: 1rem;
+}
+main {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
