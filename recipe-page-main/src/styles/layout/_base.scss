@@ -1,0 +1,19 @@
+@use "../utils/variables";
+html {
+  block-size: 100%;
+}
+body {
+  min-block-size: 100%;
+
+  display: grid;
+  place-content: center;
+
+  background: var(--eggshell);
+  font-family: "Outfit", "Young Serif", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif";
+  font-weight: 400;
+}

@@ -1,0 +1,33 @@
+@use "../utils/functions" as func;
+@use "../utils/variables";
+.card {
+  --card-max-width: #{func.rem(764px)};
+  --card-padding: #{func.rem(40px)};
+  --card-margin-block: #{func.rem(123px)};
+  --card-border-radius: #{func.rem(20px)};
+  --card-border-inner-radius: #{func.rem(10px)};
+
+  max-width: var(--card-max-width);
+  padding: var(--card-padding);
+  background-color: var(--white);
+  margin-block: var(--card-margin-block);
+  border-radius: var(--card-border-radius);
+}
+.card__image-container {
+  border-radius: var(--card-border-inner-radius);
+  margin-bottom: #{func.rem(40px)};
+  overflow: hidden;
+}
+
+@media (max-width: 532px) {
+  .card__image-container {
+    margin-left: calc(var(--card-padding) * -1);
+    margin-right: calc(var(--card-padding) * -1);
+    border-radius: 0;
+  }
+  .card {
+    padding-block: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+}

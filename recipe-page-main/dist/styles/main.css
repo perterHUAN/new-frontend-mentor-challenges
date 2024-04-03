@@ -1,0 +1,115 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+html {
+  block-size: 100%;
+}
+
+body {
+  min-block-size: 100%;
+  display: grid;
+  place-content: center;
+  background: var(--eggshell);
+  font-family: "Outfit", "Young Serif", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+.card {
+  --card-max-width: 47.75rem;
+  --card-padding: 2.5rem;
+  --card-margin-block: 7.6875rem;
+  --card-border-radius: 1.25rem;
+  --card-border-inner-radius: 0.625rem;
+  max-width: var(--card-max-width);
+  padding: var(--card-padding);
+  background-color: var(--white);
+  margin-block: var(--card-margin-block);
+  border-radius: var(--card-border-radius);
+}
+
+.card__image-container {
+  border-radius: var(--card-border-inner-radius);
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+}
+
+@media (max-width: 532px) {
+  .card__image-container {
+    margin-left: calc(var(--card-padding) * -1);
+    margin-right: calc(var(--card-padding) * -1);
+    border-radius: 0;
+  }
+  .card {
+    padding-block: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
